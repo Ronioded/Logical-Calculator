@@ -24,7 +24,9 @@ public class Var implements Expression {
     }
 
     /**
-     * The method evaluate the expression.
+     * Evaluate the expression and return the result. If the expression contains a variable which is not declared,
+     * an exception is thrown.
+     * @param assignment - the types the are declared in the assignment.
      * @return the result of the expression.
      * @throws Exception if the expression contains a variable which is not declared.
      */
@@ -40,7 +42,7 @@ public class Var implements Expression {
     }
 
     /**
-     * Like the `evaluate(assignment)` method above, but uses an empty assignment.
+     * The method evaluate the expression.
      * @return the result of the expression.
      * @throws Exception if the expression contains a variable which is not declared.
      */
